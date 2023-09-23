@@ -50,8 +50,9 @@ body {
 
 .search-bar {
     border: none;
-    color: white;
     font-size: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .top-icon {
@@ -223,8 +224,8 @@ body {
 #category-headding {
     background-color: #C5C5C5;
     margin-top: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
+    /* margin-left: 25px;
+    margin-right: 25px; */
     text-align: center;
     font-size: 2rem;
     display: flex;
@@ -241,8 +242,8 @@ body {
     align-items: center;
     justify-content: center;
     border-top: 2px solid white;
-    margin-left: 25px;
-    margin-right: 25px;
+    /* margin-left: 25px;
+    margin-right: 25px; */
 
 
 }
@@ -279,7 +280,7 @@ body {
 
 .category-img:hover {
     transform: scale(1.2);
-    background: linear-gradient(rgba(0, 0, 0, 0.4), #ff004f);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.4), #ff004f); */
 }
 
 .category-img-link {
@@ -295,36 +296,24 @@ body {
 
 /* ************ blogs section ************* */
 
-.blog-head{
+.blog-head {
     color: white;
     background-color: #140005;
-    margin: 15px;
+    margin: 15px 0;
     text-align: center;
     font-size: 2rem;
 }
 
-.blog-content{
+.blog-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 600px;
-    background-color: #C5C5C5; 
+    background-color: #C5C5C5;
 }
 
-.blog-collection{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1rem;
-    background-color: white;
-}
-
-.scroll-img{
-    height: 550px;
-    width: 85vw;
-    border: 3px solid #ff004f;
+.blog-collection {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -334,75 +323,144 @@ body {
 }
 
 
+/* ************ About section ************* */
+
+
+.about-head {
+    color: white;
+    background-color: #140005;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #C5C5C5;;
+    /* color: white; */
+    border-top: 1px solid rgb(95, 89, 89);
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border-left: 1px solid rgb(95, 89, 89);
+}
+
+.about-innerhead {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.col-content{
+    margin: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
 
 .btn{
-    font-size: 3rem;
-    margin: 2rem;
-    cursor: pointer;
-}
-
-.blog1 {
-    height: 500px;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     font-size: 1rem;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-}
-
-.blog-img1 {
-    height: 400px;
-    width: 260px;
-    border-radius: 20px;
     cursor: pointer;
-    margin: 0.5rem;
-    border: 3px solid #ff004f;
-}
-
-.blog1:hover .blog-img1{
-    transform: scale(1.1);
-    
-}
-
-.blog-btn {
-    background-color: white;
-    color: #ff004f;
-    font-size: 1rem;
-    margin-top: 1rem;
-    border-radius: 20px;
-    padding: 0.5rem;
-    cursor: grab;
-
-}
-
-.blog-innerhead {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-.blog-inner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: black;
     color: white;
-    font-size: 1.5rem;
-    height: 0;
-    width: 260px;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), #ff004f);
-    padding: 5px;
-    border-radius: 20px;
-    position: absolute;
-    visibility: hidden;
-   transition: height 1s ease-in;
-} 
-.blog1:hover .blog-inner-content{
-    visibility: visible;
-    height: 400px;
+    border-radius: 15px;
+    padding: 0.6rem;
+}
+
+.btn:hover{
+    color: #ff004f;
+    transform: translateY(-2px);
+}
+
+.col-content-2{
+    margin: 15px;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-2{
+    margin-left: 15px;
+}
+
+/* ************ Contact section ************* */
+
+#contact{
+    height: 700px;
+    margin-top: 15px;
+    background-color: #140005
+}
+
+.contact-box1{
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid rgb(95, 89, 89);
+    margin: 0 15px;
+}
+
+.contact-icon{
+    color: white;
+    font-size: 6.4rem;
+}
+
+/* ************ Contact section form ************* */
+
+.contact-box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    color: white;
+}
+.contact-box2 input,
+.contact-box2 textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-box2 form{
+    width: 40%;
+}
+.contact-box2 label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;    /*font*/
+}
+
+.form-btn{
+    text-align: center;
+}
+
+.f-btn{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ************ Footer section************* */
+
+.foo{
+    color: white;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
 }
 

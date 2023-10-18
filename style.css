@@ -450,6 +450,9 @@ body {
     font-size: 18px;
     margin-top: 10px;
 }
+.contact-icon:hover{
+    color: #ff004f;
+}
 
 /* ************ Footer section************* */
 
